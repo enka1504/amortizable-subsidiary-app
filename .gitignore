@@ -2,4 +2,5 @@
 
 # dependencies
 shopify-cart-backend/node_modules
+amortizable-upside-app/node_modules
 shopify-cart-backend/.env

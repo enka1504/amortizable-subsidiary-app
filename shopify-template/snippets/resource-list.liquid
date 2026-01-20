@@ -174,3 +174,23 @@
     %}
   </div>
 {% endif %}
+
+{%- stylesheet -%}
+
+  .resource-list {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: var(--resource-list-columns, repeat(3, 1fr));
+    column-gap: var(--resource-list-column-gap, 16px);
+    row-gap: var(--resource-list-row-gap, 16px);
+  }
+
+  @media screen and (max-width: 749px) {
+    .resource-list {
+      grid-template-columns: var(--resource-list-columns-mobile, repeat(2, 1fr));
+      column-gap: calc(var(--resource-list-column-gap, 16px) / 2);
+      row-gap: calc(var(--resource-list-row-gap, 16px) / 2);
+    }
+  }
+  
+{%- endstylesheet -%}
