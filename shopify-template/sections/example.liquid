@@ -748,7 +748,7 @@ Line 3{% endcapture %}
   "name": "Slideshow",
   "tag": "section",
   "class": "slideshow",
-  "limit": 1,
+  "max_blocks": 5,
   "settings": [
     {
       "type": "text",
@@ -756,7 +756,6 @@ Line 3{% endcapture %}
       "label": "Slideshow"
     }
   ],
-  "max_blocks": 5,
   "blocks": [
      {
        "name": "Slide",
@@ -769,10 +768,11 @@ Line 3{% endcapture %}
          }
        ]
      }
-  ],
+   ],
   "presets": [
     {
       "name": "Slideshow",
+      "category": "Banners",
       "settings": {
         "title": "Slideshow"
       },
@@ -785,18 +785,6 @@ Line 3{% endcapture %}
         }
       ]
     }
-  ],
-  "locales": {
-    "en": {
-      "title": "Slideshow"
-    },
-    "fr": {
-      "title": "Diaporama"
-    }
-  },
-  "enabled_on": {
-    "templates": ["*"],
-    "groups": ["footer"]
-  }
+  ]
 }
 {% endschema %}
