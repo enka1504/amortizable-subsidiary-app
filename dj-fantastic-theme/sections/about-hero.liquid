@@ -1,0 +1,144 @@
+{% style %}
+  .about-hero {
+    --bg-top: {{ section.settings.bg_top }};
+    --bg-bottom: {{ section.settings.bg_bottom }};
+    --radius: {{ section.settings.radius }}px;
+    padding: 24px 0 56px;
+  }
+
+  .about-hero__wrap {
+    max-width: {{ section.settings.content_max_width }}px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .about-hero__breadcrumbs {
+    font-size: 14px;
+    margin: 12px 0 18px;
+    opacity: 0.8;
+  }
+  .about-hero__breadcrumbs a { text-decoration: underline; }
+
+  .about-hero__panel {
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: linear-gradient(to bottom, var(--bg-top) 0%, var(--bg-top) 52%, var(--bg-bottom) 52%, var(--bg-bottom) 100%);
+  }
+
+  .about-hero__inner {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 28px;
+    align-items: center;
+    padding: 44px 44px;
+    min-height: 340px;
+  }
+
+  .about-hero__eyebrow {
+    font-size: 14px;
+    letter-spacing: .02em;
+    opacity: 0.85;
+    margin-bottom: 10px;
+  }
+
+  .about-hero__heading {
+    font-size: clamp(28px, 4vw, 44px);
+    line-height: 1.05;
+    margin: 0 0 14px;
+    font-weight: 800;
+  }
+
+  .about-hero__text {
+    font-size: 16px;
+    line-height: 1.65;
+    margin: 0;
+    max-width: 48ch;
+    opacity: 0.9;
+    white-space: pre-line;
+  }
+
+  .about-hero__media {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .about-hero__img {
+    width: min(520px, 100%);
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 18px 28px rgba(0,0,0,.12));
+  }
+
+  @media (max-width: 900px) {
+    .about-hero__inner {
+      grid-template-columns: 1fr;
+      padding: 28px 22px;
+    }
+    .about-hero__media { justify-content: flex-start; }
+  }
+{% endstyle %}
+
+<section class="about-hero">
+  <div class="about-hero__wrap">
+    {% if section.settings.show_breadcrumbs %}
+      <nav class="about-hero__breadcrumbs" aria-label="Breadcrumb">
+        <a href="{{ routes.root_url }}">Home</a>
+        <span>›</span>
+        <span>{{ page.title }}</span>
+      </nav>
+    {% endif %}
+
+    <div class="about-hero__panel">
+      <div class="about-hero__inner">
+        <div class="about-hero__content">
+          {% if section.settings.eyebrow != blank %}
+            <div class="about-hero__eyebrow">{{ section.settings.eyebrow }}</div>
+          {% endif %}
+          {% if section.settings.heading != blank %}
+            <h1 class="about-hero__heading">{{ section.settings.heading }}</h1>
+          {% endif %}
+          {% if section.settings.text != blank %}
+            <p class="about-hero__text">{{ section.settings.text }}</p>
+          {% endif %}
+        </div>
+
+        <div class="about-hero__media">
+          {% if section.settings.image != blank %}
+            {{
+              section.settings.image
+              | image_url: width: 1200
+              | image_tag: class: 'about-hero__img', loading: 'lazy', alt: section.settings.image.alt | escape
+            }}
+          {% else %}
+            <div style="opacity:.7; font-size:14px;">Select an image in section settings.</div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "About hero",
+  "settings": [
+    { "type": "checkbox", "id": "show_breadcrumbs", "label": "Show breadcrumbs", "default": true },
+
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Hello, we're Various" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Hello, we're Various" },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "We deliver high-quality food and drinks—transparent sourcing.\nYou can shop confidently for your family." },
+
+    { "type": "image_picker", "id": "image", "label": "Right image" },
+
+    { "type": "color", "id": "bg_top", "label": "Top background", "default": "#d7c1a6" },
+    { "type": "color", "id": "bg_bottom", "label": "Bottom background", "default": "#f5f1e9" },
+
+    { "type": "range", "id": "radius", "label": "Corner radius", "min": 0, "max": 40, "step": 2, "default": 16 },
+    { "type": "range", "id": "content_max_width", "label": "Max width", "min": 900, "max": 1400, "step": 20, "default": 1200 }
+  ],
+  "presets": [
+    { "name": "About hero" }
+  ]
+}
+{% endschema %}

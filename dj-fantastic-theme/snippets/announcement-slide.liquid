@@ -1,0 +1,41 @@
+{% comment %}
+  Announcement Slide
+  Receives:
+  - block
+{% endcomment %}
+
+<div class="annbar__slide" data-annbar-slide {{ block.shopify_attributes }}>
+  <div class="annbar__content">
+
+    {% if block.settings.link != blank %}
+      <a class="annbar__text" href="{{ block.settings.link }}">
+        {{ block.settings.text | escape }}
+
+        {% if block.settings.link_label != blank %}
+          <span class="annbar__more">{{ block.settings.link_label }}</span>
+        {% endif %}
+      </a>
+    {% else %}
+      <span class="annbar__text">
+        {{ block.settings.text | escape }}
+
+        {% if block.settings.link_label != blank %}
+          <span class="annbar__more">{{ block.settings.link_label }}</span>
+        {% endif %}
+      </span>
+    {% endif %}
+
+    {% if block.settings.show_countdown and block.settings.countdown_end != blank %}
+      <div class="annbar__chips" data-countdown data-end="{{ block.settings.countdown_end }}">
+        <span class="annbar__chip" data-dd>00</span>
+        <span class="annbar__sep">:</span>
+        <span class="annbar__chip" data-hh>00</span>
+        <span class="annbar__sep">:</span>
+        <span class="annbar__chip" data-mm>00</span>
+        <span class="annbar__sep">:</span>
+        <span class="annbar__chip" data-ss>00</span>
+      </div>
+    {% endif %}
+
+  </div>
+</div>

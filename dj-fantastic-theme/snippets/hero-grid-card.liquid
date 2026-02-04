@@ -1,0 +1,37 @@
+{% if block != nil %}
+  {% assign is_center = 'center' %}
+  <div class="hg__card {% if is_center %}hg__card--center{% endif %}" {{ block.shopify_attributes }}>
+    {% if block.settings.bg != blank %}
+      {{ block.settings.bg | image_url: width: 1800 | image_tag: class: 'hg__bgimg', loading: 'lazy' }}
+      <div class="hg__overlay"></div>
+    {% endif %}
+
+    {% if block.settings.badge != blank %}
+      <div class="hg__badge">{{ block.settings.badge }}</div>
+    {% endif %}
+
+    <div class="hg__content">
+      {% if block.settings.kicker != blank %}
+        <div class="hg__kicker">{{ block.settings.kicker }}</div>
+      {% endif %}
+
+      {% if block.settings.title != blank %}
+        {% if is_center %}
+          <h2 class="hg__title">
+            {{ block.settings.title | replace: 'Vegetables', '<span>Vegetables</span>' }}
+          </h2>
+        {% else %}
+          <h2 class="hg__title">{{ block.settings.title }}</h2>
+        {% endif %}
+      {% endif %}
+
+      {% if block.settings.text != blank %}
+        <p class="hg__text">{{ block.settings.text }}</p>
+      {% endif %}
+
+      {% if block.settings.btn_label != blank and block.settings.btn_link != blank %}
+        <a class="hg__btn" href="{{ block.settings.btn_link }}">{{ block.settings.btn_label }}</a>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

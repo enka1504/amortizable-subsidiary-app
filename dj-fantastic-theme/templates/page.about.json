@@ -1,0 +1,17 @@
+{
+  "sections": {
+    "main": {
+      "type": "about-hero",
+      "settings": {
+        "eyebrow": "Hello, we're Various",
+        "heading": "Hello, we're Various",
+        "text": "We deliver high-quality food and drinks—transparent sourcing.\nYou can shop confidently for your family.",
+        "bg_top": "#d7c1a6",
+        "bg_bottom": "#f5f1e9",
+        "content_max_width": 1200,
+        "radius": 16
+      }
+    }
+  },
+  "order": ["main"]
+}
