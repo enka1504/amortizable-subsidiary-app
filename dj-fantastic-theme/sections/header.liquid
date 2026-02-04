@@ -1,11 +1,9 @@
 {% comment %}
-  Header v2
-  Features:
+  Header v2 (clean)
   - Announcement bar + optional countdown
-  - Top utility links row + email/phone + localization
-  - Main header row: menu button, logo, category dropdown, search, icons
-  - Nav row: menu-like items with optional badges (Deal/New/Best)
-  - Theme editor configurable via blocks
+  - Top utility row (links + email/phone + optional localization)
+  - Main header row (menu drawer, logo, category select, search, icons)
+  - Nav row with badges (Deal/New/Best)
 {% endcomment %}
 
 {{ 'header-v2.css' | asset_url | stylesheet_tag }}
@@ -35,19 +33,11 @@
         </div>
 
         {%- if section.settings.enable_countdown and section.settings.countdown_end != blank -%}
-          <div
-            class="hdr2__countdown"
-            data-countdown
-            data-end="{{ section.settings.countdown_end }}"
-            aria-label="Sale countdown"
-          >
+          <div class="hdr2__countdown" data-countdown data-end="{{ section.settings.countdown_end }}" aria-label="Sale countdown">
             <span class="hdr2__countdown-label">{{ section.settings.countdown_label | escape }}</span>
-            <span class="hdr2__pill" data-days>00</span>
-            <span class="hdr2__sep">:</span>
-            <span class="hdr2__pill" data-hours>00</span>
-            <span class="hdr2__sep">:</span>
-            <span class="hdr2__pill" data-mins>00</span>
-            <span class="hdr2__sep">:</span>
+            <span class="hdr2__pill" data-days>00</span><span class="hdr2__sep">:</span>
+            <span class="hdr2__pill" data-hours>00</span><span class="hdr2__sep">:</span>
+            <span class="hdr2__pill" data-mins>00</span><span class="hdr2__sep">:</span>
             <span class="hdr2__pill" data-secs>00</span>
           </div>
         {%- endif -%}
@@ -136,38 +126,24 @@
             {%- endif -%}
 
             <label class="hdr2__sr" for="hdr2-q">Search</label>
-            <input
-              id="hdr2-q"
-              class="hdr2__input"
-              type="search"
-              name="q"
-              placeholder="{{ section.settings.search_placeholder | escape }}"
-              autocomplete="off"
-            />
-            <button class="hdr2__iconbtn" type="submit" aria-label="Search">
-              🔍
-            </button>
+            <input id="hdr2-q" class="hdr2__input" type="search" name="q"
+              placeholder="{{ section.settings.search_placeholder | escape }}" autocomplete="off" />
+            <button class="hdr2__iconbtn" type="submit" aria-label="Search">🔍</button>
           </form>
         </div>
       {%- endif -%}
 
       <div class="hdr2__icons">
         {%- if section.settings.show_theme_toggle -%}
-          <button class="hdr2__iconbtn hdr2__iconbtn--round" type="button" aria-label="Toggle theme" data-hdr2-theme>
-            ☼
-          </button>
+          <button class="hdr2__iconbtn hdr2__iconbtn--round" type="button" aria-label="Toggle theme" data-hdr2-theme>☼</button>
         {%- endif -%}
 
         {%- if section.settings.show_location -%}
-          <a class="hdr2__iconbtn hdr2__iconbtn--round" href="{{ section.settings.location_link }}" aria-label="Location">
-            ⌖
-          </a>
+          <a class="hdr2__iconbtn hdr2__iconbtn--round" href="{{ section.settings.location_link }}" aria-label="Location">⌖</a>
         {%- endif -%}
 
         {%- if show_account and shop.customer_accounts_enabled -%}
-          <a class="hdr2__iconbtn hdr2__iconbtn--round" href="{{ routes.account_url }}" aria-label="Account">
-            👤
-          </a>
+          <a class="hdr2__iconbtn hdr2__iconbtn--round" href="{{ routes.account_url }}" aria-label="Account">👤</a>
         {%- endif -%}
 
         {%- if show_cart -%}
@@ -191,7 +167,7 @@
               <li class="hdr2__navitem" {{ block.shopify_attributes }}>
                 <a class="hdr2__navlink" href="{{ block.settings.url }}">
                   <span>{{ block.settings.label | escape }}</span>
-                  {%- if block.settings.badge_text -%}
+                  {%- if block.settings.badge_text != blank -%}
                     <span class="hdr2__badge hdr2__badge--{{ block.settings.badge_style }}">
                       {{ block.settings.badge_text | escape }}
                     </span>
@@ -223,9 +199,7 @@
             {%- endfor -%}
           </ul>
         {%- else -%}
-          <div class="hdr2__drawerempty">
-            Select a drawer menu in the header settings.
-          </div>
+          <div class="hdr2__drawerempty">Select a drawer menu in the header settings.</div>
         {%- endif -%}
       </div>
     </div>
@@ -286,7 +260,7 @@
       "settings": [
         { "type": "text", "id": "label", "label": "Label", "default": "Shop by Category" },
         { "type": "url", "id": "url", "label": "URL", "default": "/" },
-        { "type": "text", "id": "badge_text", "label": "Badge text (optional)", "default": "badge_text" },
+        { "type": "text", "id": "badge_text", "label": "Badge text (optional)", "default": "New" },
         {
           "type": "select",
           "id": "badge_style",
@@ -309,14 +283,11 @@
         { "type": "top_link", "settings": { "label": "FAQs", "url": "/pages/faqs" } },
         { "type": "top_link", "settings": { "label": "News & Article", "url": "/blogs/news" } },
         { "type": "top_link", "settings": { "label": "Recipes", "url": "/blogs/recipes" } },
-        { "type": "nav_item", "settings": { "label": "Combo & Deals", "url": "/collections/all", "badge_text": "Deal", "badge_style": "deal"}},
+
+        { "type": "nav_item", "settings": { "label": "Combo & Deals", "url": "/collections/all", "badge_text": "Deal", "badge_style": "deal" } },
         { "type": "nav_item", "settings": { "label": "Bundle save", "url": "/collections/all", "badge_text": "New", "badge_style": "new" } },
-        { "type": "nav_item", "settings": { "label": "Shop by Category", "url": "/collections/all", "badge_text": "Deal" } },
-        { "type": "nav_item", "settings": { "label": "Fruit & Vegetables", "url": "/collections/all", "badge_text": "Deal" } },
-        { "type": "nav_item", "settings": { "label": "Meat & Fish", "url": "/collections/all", "badge_text": "Deal" } },
-        { "type": "nav_item", "settings": { "label": "Presets", "url": "/collections/all", "badge_text": "Best", "badge_style": "best" } },
-        { "type": "nav_item", "settings": { "label": "Template", "url": "/collections/all", "badge_text": "Deal" } }
-      ]
+        { "type": "nav_item", "settings": { "label": "Shop by Category", "url": "/collections/all", "badge_text": "" } }
+      ],
     }
   ]
 }

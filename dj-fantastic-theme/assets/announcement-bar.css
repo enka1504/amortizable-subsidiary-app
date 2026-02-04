@@ -36,15 +36,20 @@
   border-radius: 6px;
   font-weight: 700;
 }
-.announcement-bar { width: 100%; }
+
+.announcement-bar {
+  width: 100%;
+}
+
 .announcement-bar__inner {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 10px 16px;
   display: flex;
   justify-content: center;
 }
-.announcement-bar__link, .announcement-bar__text {
+
+.announcement-bar__link,
+.announcement-bar__text {
   font-size: 14px;
   line-height: 1.2;
   text-decoration: none;

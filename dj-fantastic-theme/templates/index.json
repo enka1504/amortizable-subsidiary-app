@@ -1,7 +1,7 @@
 {
   "sections": {
-    "category_chips": { "type": "category-chips", "settings": { "max_width": 1400 } },
-    "hero_grid": { "type": "hero-grid-3", "settings": { "max_width": 1400, "gap": 16 } }
+    "category_chips": { "type": "category-chips", "settings": { "max_width": 1920 } },
+    "hero_grid": { "type": "hero-grid-3", "settings": { "max_width": 1920, "gap": 16 } }
   },
-  "order": ["category_chips", "hero_grid"]
+  "order": [ "category_chips", "hero_grid"]
 }
