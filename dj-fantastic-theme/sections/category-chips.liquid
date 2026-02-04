@@ -1,0 +1,57 @@
+{% style %}
+  .chips { padding: 18px 0; }
+  .chips__wrap { max-width: {{ section.settings.max_width }}px; margin: 0 auto; padding: 0 16px; }
+  .chips__row { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(220px, 1fr); gap: 14px; overflow-x: auto; padding-bottom: 6px; }
+  .chip { border-radius: 12px; padding: 16px 18px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; border: 1px solid rgba(0,0,0,.06); }
+  .chip__title { font-weight: 700; }
+  .chip__imgs { display: flex; gap: 10px; }
+  .chip__imgs img { width: 34px; height: 34px; object-fit: contain; }
+  .chip--bg1 { background: #f2e8d5; }
+  .chip--bg2 { background: #e9e8ff; }
+  .chip--bg3 { background: #f4f2ea; }
+  .chip--bg4 { background: #e9f0ff; }
+  .chip--bg5 { background: #e8f2e8; }
+  .chip--bg6 { background: #e9f8fb; }
+{% endstyle %}
+
+<section class="chips">
+  <div class="chips__wrap">
+    <div class="chips__row">
+      {% for block in section.blocks %}
+        <a class="chip chip--bg{{ forloop.index | modulo: 6 | plus: 1 }}" href="{{ block.settings.link }}">
+          <div class="chip__title">{{ block.settings.title }}</div>
+          <div class="chip__imgs">
+            {% if block.settings.image_1 != blank %}
+              {{ block.settings.image_1 | image_url: width: 80 | image_tag }}
+            {% endif %}
+            {% if block.settings.image_2 != blank %}
+              {{ block.settings.image_2 | image_url: width: 80 | image_tag }}
+            {% endif %}
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Category chips",
+  "settings": [
+    { "type": "range", "id": "max_width", "label": "Max width", "min": 900, "max": 1920, "step": 20, "default": 1920 }
+  ],
+  "blocks": [
+    {
+      "type": "chip",
+      "name": "Chip",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title", "default": "Meat & Fish" },
+        { "type": "url", "id": "link", "label": "Link" },
+        { "type": "image_picker", "id": "image_1", "label": "Image 1" },
+        { "type": "image_picker", "id": "image_2", "label": "Image 2" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Category chips", "blocks": [{ "type": "chip" }, { "type": "chip" }, { "type": "chip" }, { "type": "chip" }, { "type": "chip" }, { "type": "chip" }] }]
+}
+{% endschema %}

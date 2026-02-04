@@ -1,25 +1,70 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "type": "footer",
-  "name": "t:general.footer",
+  "name": "Footer group",
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "top_menu_1": {
+          "type": "top_menu",
+          "settings": { "title": "Company", "menu": "footer" }
+        },
+        "top_menu_2": {
+          "type": "top_menu",
+          "settings": { "title": "Top Collections", "menu": "footer" }
+        },
+        "top_menu_3": {
+          "type": "top_menu",
+          "settings": { "title": "Help and support", "menu": "footer" }
+        },
+
+        "cat_1": {
+          "type": "category_menu",
+          "settings": { "title": "Meat & Fish", "menu": "main-menu" }
+        },
+        "cat_2": {
+          "type": "category_menu",
+          "settings": { "title": "Fruit & Vegetables", "menu": "main-menu" }
+        },
+        "cat_3": {
+          "type": "category_menu",
+          "settings": { "title": "Pantry staples", "menu": "main-menu" }
+        },
+        "cat_4": {
+          "type": "category_menu",
+          "settings": { "title": "Bakery", "menu": "main-menu" }
+        },
+        "cat_5": {
+          "type": "category_menu",
+          "settings": { "title": "Beverages", "menu": "main-menu" }
+        }
+      },
+      "block_order": [
+        "top_menu_1",
+        "top_menu_2",
+        "top_menu_3",
+        "cat_1",
+        "cat_2",
+        "cat_3",
+        "cat_4",
+        "cat_5"
+      ],
       "settings": {
-        "menu": "",
+        "show_newsletter": true,
+        "show_top_columns": true,
+        "newsletter_kicker": "Join our newsletter",
+        "newsletter_heading": "Get all latest information on events, sales and offers.",
+        "newsletter_placeholder": "Your email",
+        "newsletter_button": "Subscribe",
+        "phone": "(+84) 123 4567 89",
+        "address": "75 9th Ave, New York, NY 10011-7006",
+        "email": "support@example.com",
+        "hours": "9:00pm - 5:00pm",
+        "slogan": "<p>This is everything you need in your pantry!</p>",
+        "show_powered_by": true,
         "show_payment_icons": true
       }
     }
   },
-  "order": [
-    "footer"
-  ]
+  "order": ["footer"]
 }
