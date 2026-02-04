@@ -482,7 +482,160 @@
       "settings": {
         "heading": ""
       }
-    }
+    },
+    "tabbed_products_carousel": {
+      "type": "tabbed-products-carousel",
+      "blocks": {
+      },
+      "block_order": [
+      ],
+      "settings": {
+      }
+    },
+    // "hero_grid": {
+    //   "type": "hero-grid-3",
+    //   "blocks": {
+    //     "card_right_qjAXRJ": {
+    //       "type": "card_right",
+    //       "settings": {
+    //         "bg": "shopify://shop_images/vegetables_1_94e08dbc-4a48-4c35-a509-b62a5837451b.jpg",
+    //         "badge": "35%",
+    //         "title": "Without Science",
+    //         "text": "Everything for an easier start to the new year",
+    //         "btn_label": "Shop now",
+    //         "btn_link": "shopify://collections/processed-food"
+    //       }
+    //     },
+    //     "card_center_j7LDMa": {
+    //       "type": "card_center",
+    //       "settings": {
+    //         "bg": "shopify://shop_images/vegetables_1.webp",
+    //         "kicker": "Big Discount",
+    //         "title": "Fresh Vegetables & Fruit Basket",
+    //         "text": "So you don't have to go anywhere else for freshness",
+    //         "btn_label": "Shop now",
+    //         "btn_link": "shopify://collections/baverages"
+    //       }
+    //     },
+    //     "card_left_WXqjXx": {
+    //       "type": "card_left",
+    //       "settings": {
+    //         "bg": "shopify://shop_images/beverages_4_9699db81-9918-44d5-ad83-35ba4e1b4b9e.jpg",
+    //         "badge": "50%",
+    //         "kicker": "Get extra 50% off",
+    //         "title": "Fresh Everyday",
+    //         "text": "",
+    //         "btn_label": "Shop now",
+    //         "btn_link": "shopify://collections/meat-poultry"
+    //       }
+    //     }
+    //   },
+    //   "block_order": [
+    //     "card_right_qjAXRJ",
+    //     "card_center_j7LDMa",
+    //     "card_left_WXqjXx"
+    //   ],
+    //   "settings": {
+    //     "max_width": 1920,
+    //     "gap": 16
+    //   }
+    // },
+    // "hero_grid": {
+    //   "type": "hero-grid-3",
+    //   "blocks": {
+    //     "card_right_qjAXRJ": {
+    //       "type": "card_right",
+    //       "settings": {
+    //         "bg": "shopify://shop_images/vegetables_1_94e08dbc-4a48-4c35-a509-b62a5837451b.jpg",
+    //         "badge": "35%",
+    //         "title": "Without Science",
+    //         "text": "Everything for an easier start to the new year",
+    //         "btn_label": "Shop now",
+    //         "btn_link": "shopify://collections/processed-food"
+    //       }
+    //     },
+    //     "card_center_j7LDMa": {
+    //       "type": "card_center",
+    //       "settings": {
+    //         "bg": "shopify://shop_images/vegetables_1.webp",
+    //         "kicker": "Big Discount",
+    //         "title": "Fresh Vegetables & Fruit Basket",
+    //         "text": "So you don't have to go anywhere else for freshness",
+    //         "btn_label": "Shop now",
+    //         "btn_link": "shopify://collections/baverages"
+    //       }
+    //     },
+    //     "card_left_WXqjXx": {
+    //       "type": "card_left",
+    //       "settings": {
+    //         "bg": "shopify://shop_images/beverages_4_9699db81-9918-44d5-ad83-35ba4e1b4b9e.jpg",
+    //         "badge": "50%",
+    //         "kicker": "Get extra 50% off",
+    //         "title": "Fresh Everyday",
+    //         "text": "",
+    //         "btn_label": "Shop now",
+    //         "btn_link": "shopify://collections/meat-poultry"
+    //       }
+    //     }
+    //   },
+    //   "block_order": [
+    //     "card_right_qjAXRJ",
+    //     "card_center_j7LDMa",
+    //     "card_left_WXqjXx"
+    //   ],
+    //   "settings": {
+    //     "max_width": 1920,
+    //     "gap": 16
+    //   }
+    // },
+    // "hero_grid": {
+    //   "type": "hero-grid-3",
+    //   "blocks": {
+    //     "card_right_qjAXRJ": {
+    //       "type": "card_right",
+    //       "settings": {
+    //         "bg": "shopify://shop_images/vegetables_1_94e08dbc-4a48-4c35-a509-b62a5837451b.jpg",
+    //         "badge": "35%",
+    //         "title": "Without Science",
+    //         "text": "Everything for an easier start to the new year",
+    //         "btn_label": "Shop now",
+    //         "btn_link": "shopify://collections/processed-food"
+    //       }
+    //     },
+    //     "card_center_j7LDMa": {
+    //       "type": "card_center",
+    //       "settings": {
+    //         "bg": "shopify://shop_images/vegetables_1.webp",
+    //         "kicker": "Big Discount",
+    //         "title": "Fresh Vegetables & Fruit Basket",
+    //         "text": "So you don't have to go anywhere else for freshness",
+    //         "btn_label": "Shop now",
+    //         "btn_link": "shopify://collections/baverages"
+    //       }
+    //     },
+    //     "card_left_WXqjXx": {
+    //       "type": "card_left",
+    //       "settings": {
+    //         "bg": "shopify://shop_images/beverages_4_9699db81-9918-44d5-ad83-35ba4e1b4b9e.jpg",
+    //         "badge": "50%",
+    //         "kicker": "Get extra 50% off",
+    //         "title": "Fresh Everyday",
+    //         "text": "",
+    //         "btn_label": "Shop now",
+    //         "btn_link": "shopify://collections/meat-poultry"
+    //       }
+    //     }
+    //   },
+    //   "block_order": [
+    //     "card_right_qjAXRJ",
+    //     "card_center_j7LDMa",
+    //     "card_left_WXqjXx"
+    //   ],
+    //   "settings": {
+    //     "max_width": 1920,
+    //     "gap": 16
+    //   }
+    // },
   },
   "order": [
     "category_chips",
@@ -492,6 +645,7 @@
     "price_hits_week",
     "collections_ff8Ccj",
     "dietary_icons",
-    "deal_bundle"
+    "deal_bundle",
+    "tabbed_products_carousel"
   ]
 }
