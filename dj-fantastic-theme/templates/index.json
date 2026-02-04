@@ -486,156 +486,419 @@
     "tabbed_products_carousel": {
       "type": "tabbed-products-carousel",
       "blocks": {
+        "tab_AjMfbk": {
+          "type": "tab",
+          "settings": {
+            "collection": "vegetables",
+            "label": "Meat",
+            "badge_1": "Highly rated",
+            "badge_2": ""
+          }
+        },
+        "tab_BNJ8mC": {
+          "type": "tab",
+          "settings": {
+            "collection": "processed-fruit-vegetables",
+            "label": "Fruit",
+            "badge_1": "Highly rated",
+            "badge_2": ""
+          }
+        },
+        "tab_knd78t": {
+          "type": "tab",
+          "settings": {
+            "collection": "vegetables",
+            "label": "Vegetables",
+            "badge_1": "Highly rated",
+            "badge_2": ""
+          }
+        }
       },
       "block_order": [
+        "tab_AjMfbk",
+        "tab_BNJ8mC",
+        "tab_knd78t"
       ],
       "settings": {
+        "heading": "Fruit & Vegetables",
+        "view_all": "shopify://collections/vegetables",
+        "limit": 8,
+        "shipping_note": "Receives in 5 days.",
+        "promo_title": "Fresh Vegetables for Everyday Wellness",
+        "promo_text": "promo",
+        "promo_button": "Shop All",
+        "promo_link": ""
       }
     },
-    // "hero_grid": {
-    //   "type": "hero-grid-3",
-    //   "blocks": {
-    //     "card_right_qjAXRJ": {
-    //       "type": "card_right",
-    //       "settings": {
-    //         "bg": "shopify://shop_images/vegetables_1_94e08dbc-4a48-4c35-a509-b62a5837451b.jpg",
-    //         "badge": "35%",
-    //         "title": "Without Science",
-    //         "text": "Everything for an easier start to the new year",
-    //         "btn_label": "Shop now",
-    //         "btn_link": "shopify://collections/processed-food"
-    //       }
-    //     },
-    //     "card_center_j7LDMa": {
-    //       "type": "card_center",
-    //       "settings": {
-    //         "bg": "shopify://shop_images/vegetables_1.webp",
-    //         "kicker": "Big Discount",
-    //         "title": "Fresh Vegetables & Fruit Basket",
-    //         "text": "So you don't have to go anywhere else for freshness",
-    //         "btn_label": "Shop now",
-    //         "btn_link": "shopify://collections/baverages"
-    //       }
-    //     },
-    //     "card_left_WXqjXx": {
-    //       "type": "card_left",
-    //       "settings": {
-    //         "bg": "shopify://shop_images/beverages_4_9699db81-9918-44d5-ad83-35ba4e1b4b9e.jpg",
-    //         "badge": "50%",
-    //         "kicker": "Get extra 50% off",
-    //         "title": "Fresh Everyday",
-    //         "text": "",
-    //         "btn_label": "Shop now",
-    //         "btn_link": "shopify://collections/meat-poultry"
-    //       }
-    //     }
-    //   },
-    //   "block_order": [
-    //     "card_right_qjAXRJ",
-    //     "card_center_j7LDMa",
-    //     "card_left_WXqjXx"
-    //   ],
-    //   "settings": {
-    //     "max_width": 1920,
-    //     "gap": 16
-    //   }
-    // },
-    // "hero_grid": {
-    //   "type": "hero-grid-3",
-    //   "blocks": {
-    //     "card_right_qjAXRJ": {
-    //       "type": "card_right",
-    //       "settings": {
-    //         "bg": "shopify://shop_images/vegetables_1_94e08dbc-4a48-4c35-a509-b62a5837451b.jpg",
-    //         "badge": "35%",
-    //         "title": "Without Science",
-    //         "text": "Everything for an easier start to the new year",
-    //         "btn_label": "Shop now",
-    //         "btn_link": "shopify://collections/processed-food"
-    //       }
-    //     },
-    //     "card_center_j7LDMa": {
-    //       "type": "card_center",
-    //       "settings": {
-    //         "bg": "shopify://shop_images/vegetables_1.webp",
-    //         "kicker": "Big Discount",
-    //         "title": "Fresh Vegetables & Fruit Basket",
-    //         "text": "So you don't have to go anywhere else for freshness",
-    //         "btn_label": "Shop now",
-    //         "btn_link": "shopify://collections/baverages"
-    //       }
-    //     },
-    //     "card_left_WXqjXx": {
-    //       "type": "card_left",
-    //       "settings": {
-    //         "bg": "shopify://shop_images/beverages_4_9699db81-9918-44d5-ad83-35ba4e1b4b9e.jpg",
-    //         "badge": "50%",
-    //         "kicker": "Get extra 50% off",
-    //         "title": "Fresh Everyday",
-    //         "text": "",
-    //         "btn_label": "Shop now",
-    //         "btn_link": "shopify://collections/meat-poultry"
-    //       }
-    //     }
-    //   },
-    //   "block_order": [
-    //     "card_right_qjAXRJ",
-    //     "card_center_j7LDMa",
-    //     "card_left_WXqjXx"
-    //   ],
-    //   "settings": {
-    //     "max_width": 1920,
-    //     "gap": 16
-    //   }
-    // },
-    // "hero_grid": {
-    //   "type": "hero-grid-3",
-    //   "blocks": {
-    //     "card_right_qjAXRJ": {
-    //       "type": "card_right",
-    //       "settings": {
-    //         "bg": "shopify://shop_images/vegetables_1_94e08dbc-4a48-4c35-a509-b62a5837451b.jpg",
-    //         "badge": "35%",
-    //         "title": "Without Science",
-    //         "text": "Everything for an easier start to the new year",
-    //         "btn_label": "Shop now",
-    //         "btn_link": "shopify://collections/processed-food"
-    //       }
-    //     },
-    //     "card_center_j7LDMa": {
-    //       "type": "card_center",
-    //       "settings": {
-    //         "bg": "shopify://shop_images/vegetables_1.webp",
-    //         "kicker": "Big Discount",
-    //         "title": "Fresh Vegetables & Fruit Basket",
-    //         "text": "So you don't have to go anywhere else for freshness",
-    //         "btn_label": "Shop now",
-    //         "btn_link": "shopify://collections/baverages"
-    //       }
-    //     },
-    //     "card_left_WXqjXx": {
-    //       "type": "card_left",
-    //       "settings": {
-    //         "bg": "shopify://shop_images/beverages_4_9699db81-9918-44d5-ad83-35ba4e1b4b9e.jpg",
-    //         "badge": "50%",
-    //         "kicker": "Get extra 50% off",
-    //         "title": "Fresh Everyday",
-    //         "text": "",
-    //         "btn_label": "Shop now",
-    //         "btn_link": "shopify://collections/meat-poultry"
-    //       }
-    //     }
-    //   },
-    //   "block_order": [
-    //     "card_right_qjAXRJ",
-    //     "card_center_j7LDMa",
-    //     "card_left_WXqjXx"
-    //   ],
-    //   "settings": {
-    //     "max_width": 1920,
-    //     "gap": 16
-    //   }
-    // },
+    "tabbed_products_carousel_yxkEwX": {
+      "type": "tabbed-products-carousel",
+      "blocks": {
+        "tab_8TJ4ey": {
+          "type": "tab",
+          "settings": {
+            "collection": "vegetables",
+            "label": "Vegetables",
+            "badge_1": "Highly rated",
+            "badge_2": ""
+          }
+        },
+        "tab_nm7Nng": {
+          "type": "tab",
+          "settings": {
+            "collection": "vegetables",
+            "label": "Meat",
+            "badge_1": "Highly rated",
+            "badge_2": ""
+          }
+        },
+        "tab_6AcUqD": {
+          "type": "tab",
+          "settings": {
+            "collection": "vegetables",
+            "label": "Bakery",
+            "badge_1": "Highly rated",
+            "badge_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_8TJ4ey",
+        "tab_nm7Nng",
+        "tab_6AcUqD"
+      ],
+      "name": "Tabbed products carousel",
+      "settings": {
+        "heading": "Fruit & Vegetables",
+        "view_all": "",
+        "limit": 8,
+        "shipping_note": "Receives in 5 days.",
+        "promo_title": "Fresh Vegetables for Everyday Wellness",
+        "promo_text": "promo",
+        "promo_button": "Shop All",
+        "promo_link": ""
+      }
+    },
+    "featured_combo_xKrFF6": {
+      "type": "featured-combo",
+      "name": "Featured combo hero",
+      "settings": {
+        "product": "bakery-1",
+        "countdown_label": "Sale ends in",
+        "ends_at": "2026-12-31 23:59",
+        "description": "<p>Use this block for the combo story + key features.</p>",
+        "buy_now": true
+      }
+    },
+    "certificates_quality_WGCfif": {
+      "type": "certificates-quality",
+      "blocks": {
+        "cert_KHjawA": {
+          "type": "cert",
+          "settings": {
+            "logo": "shopify://shop_images/frozenproduct_1_192ab7b4-fd93-470f-ab43-e6ec8bc2c7d1.jpg",
+            "alt": "Certificate"
+          }
+        },
+        "cert_K9nCPX": {
+          "type": "cert",
+          "settings": {
+            "logo": "shopify://shop_images/bakery_3_5e47533e-5f83-48fb-9caf-972e34d4d80d.jpg",
+            "alt": "Certificate"
+          }
+        },
+        "cert_pP9xrj": {
+          "type": "cert",
+          "settings": {
+            "logo": "shopify://shop_images/beverages_4_9699db81-9918-44d5-ad83-35ba4e1b4b9e.jpg",
+            "alt": "Certificate"
+          }
+        },
+        "cert_YDKEW4": {
+          "type": "cert",
+          "settings": {
+            "logo": "shopify://shop_images/vegetables_1.webp",
+            "alt": "Certificate"
+          }
+        },
+        "cert_cQNqtr": {
+          "type": "cert",
+          "settings": {
+            "logo": "shopify://shop_images/salad_2.jpg",
+            "alt": "Certificate"
+          }
+        },
+        "cert_9Y6f88": {
+          "type": "cert",
+          "settings": {
+            "logo": "shopify://shop_images/processed_fruit_vegetables_2.jpg",
+            "alt": "Certificate"
+          }
+        },
+        "stat_cXmM9e": {
+          "type": "stat",
+          "settings": {
+            "number": "40+",
+            "title": "Districts Represented",
+            "desc": "Each region offered its own story & strength."
+          }
+        },
+        "stat_VHarfC": {
+          "type": "stat",
+          "settings": {
+            "number": "40+",
+            "title": "Districts Represented",
+            "desc": "Each region offered its own story & strength."
+          }
+        },
+        "stat_NwEVWD": {
+          "type": "stat",
+          "settings": {
+            "number": "40+",
+            "title": "Districts Represented",
+            "desc": "Each region offered its own story & strength."
+          }
+        },
+        "stat_3EiaMn": {
+          "type": "stat",
+          "settings": {
+            "number": "40+",
+            "title": "Districts Represented",
+            "desc": "Each region offered its own story & strength."
+          }
+        }
+      },
+      "block_order": [
+        "cert_KHjawA",
+        "cert_K9nCPX",
+        "cert_pP9xrj",
+        "cert_YDKEW4",
+        "cert_cQNqtr",
+        "cert_9Y6f88",
+        "stat_cXmM9e",
+        "stat_VHarfC",
+        "stat_NwEVWD",
+        "stat_3EiaMn"
+      ],
+      "name": "Certificate of Quality",
+      "settings": {
+        "heading": "Certificate of Quality",
+        "blue_title": "This is where your food actually begins",
+        "blue_sub": "It’s the care and integrity in every ingredient that makes your meals better."
+      }
+    },
+    "category_cards_carousel_EijVcE": {
+      "type": "category-cards-carousel",
+      "blocks": {
+        "cat_gtimEd": {
+          "type": "cat",
+          "settings": {
+            "title": "Pantry Staples",
+            "imagestrip": "shopify://shop_images/vegetables_1_94e08dbc-4a48-4c35-a509-b62a5837451b.jpg",
+            "bg": "a",
+            "links": "<ul><li><a href=\"https://maximize-various.myshopify.com/collections/pantry-staples-copy\" title=\"Rice, Pasta & Noodles\">Rice, Pasta & Noodles</a></li><li><a href=\"https://maximize-various.myshopify.com/collections/pasta-copy\" title=\"Spices & Seasonings\">Spices & Seasonings</a></li><li><a href=\"https://maximize-various.myshopify.com/collections/sauces-copy\" title=\"Ingredients\">Ingredients</a></li><li><a href=\"https://maximize-various.myshopify.com/collections/flour-copy\" title=\"Snacks\">Snacks</a></li></ul><p><a href=\"https://maximize-various.myshopify.com/collections/pantry-staples\">More</a></p>",
+            "link": "shopify://collections/pantry-staples"
+          }
+        },
+        "cat_mhXqiQ": {
+          "type": "cat",
+          "settings": {
+            "title": "Fruit & Vegetables",
+            "imagestrip": "shopify://shop_images/vegetables_2.webp",
+            "bg": "b",
+            "links": "<ul><li><a href=\"https://maximize-various.myshopify.com/collections/flour-copy\" title=\"Snacks\">Snacks</a></li><li><a href=\"https://maximize-various.myshopify.com/collections/flour-copy\" title=\"Snacks\">Snack</a></li><li><a href=\"https://maximize-various.myshopify.com/collections/flour-copy\" title=\"Snacks\">Snacks</a></li><li><a href=\"https://maximize-various.myshopify.com/collections/flour-copy\" title=\"Snacks\">Snacks</a></li></ul><p><a href=\"https://maximize-various.myshopify.com/collections/pantry-staples\">More</a></p>",
+            "link": ""
+          }
+        },
+        "cat_mT4fH6": {
+          "type": "cat",
+          "settings": {
+            "title": "Fruit & Vegetables",
+            "bg": "a",
+            "links": "<ul><li><a href=\"#\">Item</a></li><li><a href=\"#\">Item</a></li></ul>",
+            "link": ""
+          }
+        },
+        "cat_Y7YQQL": {
+          "type": "cat",
+          "settings": {
+            "title": "Fruit & Vegetables",
+            "bg": "a",
+            "links": "<ul><li><a href=\"#\">Item</a></li><li><a href=\"#\">Item</a></li></ul>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "cat_gtimEd",
+        "cat_mhXqiQ",
+        "cat_mT4fH6",
+        "cat_Y7YQQL"
+      ],
+      "name": "Category cards carousel",
+      "settings": {
+        "heading": "Shop conveniently in the online supermarket"
+      }
+    },
+    "video_cta_JzynKd": {
+      "type": "video-cta",
+      "name": "Video CTA",
+      "settings": {
+        "heading": "Explore our Free Recipe Collection",
+        "subheading": "2,000+ nourishing recipes to make everyday cooking simple, satisfying and full of flavour.",
+        "button_label": "View All Recipes",
+        "button_link": "shopify://collections"
+      }
+    },
+    "recipe_carousel_xhtQWW": {
+      "type": "recipe-carousel",
+      "name": "Recipe carousel",
+      "settings": {
+        "heading": "Recipes",
+        "sub": "",
+        "blog": "recipe",
+        "limit": 5,
+        "view_all": "shopify://blogs/recipe",
+        "show_time_chips": true,
+        "prep_default": "15 mins",
+        "cook_default": "20 mins",
+        "total_default": "35 mins"
+      }
+    },
+    "popular_companies_gyNhHj": {
+      "type": "popular-companies",
+      "blocks": {
+        "feature_NzkkzQ": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/salad_1.jpg",
+            "title": "Quality assurance",
+            "desc": "Add details on availability, style, or even provide a review."
+          }
+        },
+        "feature_wC7ATV": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/vegetables_3.jpg",
+            "title": "Quality assurance",
+            "desc": "Add details on availability, style, or even provide a review."
+          }
+        },
+        "feature_dm6G7M": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/salad_3.jpg",
+            "title": "Quality assurance",
+            "desc": "Add details on availability, style, or even provide a review."
+          }
+        },
+        "feature_Nc38gV": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/processed_food_1.avif",
+            "title": "Quality assurance",
+            "desc": "Add details on availability, style, or even provide a review."
+          }
+        },
+        "company_mCXPhJ": {
+          "type": "company",
+          "settings": {
+            "bg": "#e9f6f7",
+            "logo": "shopify://shop_images/bakery_3_5e47533e-5f83-48fb-9caf-972e34d4d80d.jpg",
+            "title": "Brand name",
+            "text": "Short brand line.",
+            "link": "shopify://collections/frontpage"
+          }
+        },
+        "company_6VB4gV": {
+          "type": "company",
+          "settings": {
+            "bg": "#e9f6f7",
+            "logo": "shopify://shop_images/bakery_1_4689967b-be6f-4f10-9127-489c10f07fc4.avif",
+            "title": "Brand name",
+            "text": "Short brand line.",
+            "link": "shopify://collections/salad"
+          }
+        },
+        "company_zdPNNW": {
+          "type": "company",
+          "settings": {
+            "bg": "#e9f6f7",
+            "logo": "shopify://shop_images/vegetables_3.jpg",
+            "title": "Brand name",
+            "text": "Short brand line.",
+            "link": "shopify://collections/pantry-staples"
+          }
+        },
+        "company_QLpMp3": {
+          "type": "company",
+          "settings": {
+            "bg": "#e9f6f7",
+            "logo": "shopify://shop_images/beverages_4_9699db81-9918-44d5-ad83-35ba4e1b4b9e.jpg",
+            "title": "Brand name",
+            "text": "Short brand line.",
+            "link": "shopify://collections/pantry-staples"
+          }
+        },
+        "company_8bxyLh": {
+          "type": "company",
+          "settings": {
+            "bg": "#e9f6f7",
+            "logo": "shopify://shop_images/processed_fruit_vegetables_2.jpg",
+            "title": "Brand name",
+            "text": "Short brand line.",
+            "link": "shopify://collections/vegetables"
+          }
+        },
+        "company_XwBKEG": {
+          "type": "company",
+          "settings": {
+            "bg": "#e9f6f7",
+            "logo": "shopify://shop_images/processed_fruit_vegetables_1.jpg",
+            "title": "Brand name",
+            "text": "Short brand line.",
+            "link": "shopify://collections/frozen-products"
+          }
+        },
+        "company_t3KMdM": {
+          "type": "company",
+          "settings": {
+            "bg": "#e9f6f7",
+            "title": "Brand name",
+            "text": "Short brand line.",
+            "link": "shopify://collections/vegetables"
+          }
+        },
+        "company_FHdzJ7": {
+          "type": "company",
+          "settings": {
+            "bg": "#e9f6f7",
+            "logo": "shopify://shop_images/beverages_1_2509a95e-795f-497c-8ae4-89af8f589994.jpg",
+            "title": "Brand name",
+            "text": "Short brand line.",
+            "link": "shopify://collections/diary"
+          }
+        }
+      },
+      "block_order": [
+        "feature_NzkkzQ",
+        "feature_wC7ATV",
+        "feature_dm6G7M",
+        "feature_Nc38gV",
+        "company_mCXPhJ",
+        "company_6VB4gV",
+        "company_zdPNNW",
+        "company_QLpMp3",
+        "company_8bxyLh",
+        "company_XwBKEG",
+        "company_t3KMdM",
+        "company_FHdzJ7"
+      ],
+      "name": "Popular companies",
+      "settings": {
+        "heading": "Popular Companies",
+        "sub": "Some of the new products arriving this week"
+      }
+    }
   },
   "order": [
     "category_chips",
@@ -646,6 +909,13 @@
     "collections_ff8Ccj",
     "dietary_icons",
     "deal_bundle",
-    "tabbed_products_carousel"
+    "tabbed_products_carousel",
+    "tabbed_products_carousel_yxkEwX",
+    "featured_combo_xKrFF6",
+    "certificates_quality_WGCfif",
+    "category_cards_carousel_EijVcE",
+    "video_cta_JzynKd",
+    "recipe_carousel_xhtQWW",
+    "popular_companies_gyNhHj"
   ]
 }

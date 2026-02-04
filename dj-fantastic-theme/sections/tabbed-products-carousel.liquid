@@ -49,7 +49,9 @@
                 <div class="hvTrack" data-hv-track>
                   {% for product in col.products limit: section.settings.limit %}
                     {% assign v = product.selected_or_first_available_variant %}
-                    {% assign has_sale = v.compare_at_price and v.compare_at_price > v.price %}
+                    {% if v.compare_at_price and v.compare_at_price > v.price %}
+                      {% assign has_sale = v.compare_at_price %}
+                    {%endif%}
                     {% assign pct = 0 %}
                     {% if has_sale %}
                       {% assign diff = v.compare_at_price | minus: v.price %}
@@ -137,7 +139,7 @@
     { "type": "text", "id": "shipping_note", "label": "Shipping note", "default": "Receives in 5 days." },
 
     { "type": "text", "id": "promo_title", "label": "Left promo title", "default": "Fresh Vegetables for Everyday Wellness" },
-    { "type": "text", "id": "promo_text", "label": "Left promo text", "default": "" },
+    { "type": "text", "id": "promo_text", "label": "Left promo text", "default": "promo" },
     { "type": "text", "id": "promo_button", "label": "Left promo button", "default": "Shop All" },
     { "type": "url", "id": "promo_link", "label": "Left promo link" },
     { "type": "image_picker", "id": "promo_image", "label": "Left promo image" }
