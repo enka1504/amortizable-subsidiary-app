@@ -1,0 +1,40 @@
+{{ 'home-various.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'home-various.js' | asset_url }}" defer></script>
+
+<section class="hv" data-hv-section>
+  <div class="page-width">
+    <div class="hvVideo">
+      {% if section.settings.video != blank %}
+        {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true, class: 'hvVideo__v', data_hv_video: true }}
+      {% else %}
+        <video data-hv-video autoplay muted loop playsinline></video>
+      {% endif %}
+
+      <div class="hvVideo__overlay">
+        <div class="hvVideo__inner">
+          <h2 class="hvVideo__h">{{ section.settings.heading | escape }}</h2>
+          <p class="hvVideo__p">{{ section.settings.subheading | escape }}</p>
+          {% if section.settings.button_link != blank %}
+            <a class="hvBtn" href="{{ section.settings.button_link }}">{{ section.settings.button_label | escape }}</a>
+          {% endif %}
+        </div>
+      </div>
+
+      <button class="hvVideo__pause" type="button" data-hv-video-toggle aria-label="Pause / Play">⏸</button>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Video CTA",
+  "settings": [
+    { "type": "video", "id": "video", "label": "Background video" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Explore our Free Recipe Collection" },
+    { "type": "text", "id": "subheading", "label": "Subheading", "default": "2,000+ nourishing recipes to make everyday cooking simple, satisfying and full of flavour." },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "View All Recipes" },
+    { "type": "url", "id": "button_link", "label": "Button link" }
+  ],
+  "presets": [{ "name": "Video CTA" }]
+}
+{% endschema %}

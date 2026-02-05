@@ -1,0 +1,63 @@
+{{ 'home-various.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'home-various.js' | asset_url }}" defer></script>
+
+<section class="hv" data-hv-section>
+  <div class="page-width">
+    <h2 class="hv__title" style="text-align:center;">{{ section.settings.heading | escape }}</h2>
+
+    <div class="hvCertRow">
+      {% for block in section.blocks %}
+        {% if block.type == 'cert' and block.settings.logo != blank %}
+          {{ block.settings.logo
+            | image_url: height: 60
+            | image_tag:
+              loading: 'lazy',
+              alt: block.settings.alt | default: 'Certificate'
+          }}
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="hvBlueBlock">
+      <h3 class="hvBlueBlock__h">{{ section.settings.blue_title | escape }}</h3>
+      <p class="hvBlueBlock__p">{{ section.settings.blue_sub | escape }}</p>
+
+      <div class="hvStats">
+        {% for block in section.blocks %}
+          {% if block.type == 'stat' %}
+            <div class="hvStat" {{ block.shopify_attributes }}>
+              <p class="hvStat__n">{{ block.settings.number | escape }}</p>
+              <p class="hvStat__t">{{ block.settings.title | escape }}</p>
+              <p class="hvStat__d">{{ block.settings.desc | escape }}</p>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Certificate of Quality",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Certificate of Quality" },
+    { "type": "text", "id": "blue_title", "label": "Blue block title", "default": "This is where your food actually begins" },
+    { "type": "text", "id": "blue_sub", "label": "Blue block subtitle", "default": "It’s the care and integrity in every ingredient that makes your meals better." }
+  ],
+  "blocks": [
+    { "type": "cert", "name": "Certificate logo", "settings": [
+      { "type": "image_picker", "id": "logo", "label": "Logo image" },
+      { "type": "text", "id": "alt", "label": "Alt text", "default": "Certificate" }
+    ]},
+    { "type": "stat", "name": "Stat", "settings": [
+      { "type": "text", "id": "number", "label": "Number", "default": "40+" },
+      { "type": "text", "id": "title", "label": "Title", "default": "Districts Represented" },
+      { "type": "text", "id": "desc", "label": "Description", "default": "Each region offered its own story & strength." }
+    ]}
+  ],
+  "presets": [
+    { "name": "Certificate of Quality" }
+  ]
+}
+{% endschema %}
