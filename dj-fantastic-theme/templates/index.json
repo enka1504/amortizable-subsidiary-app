@@ -251,13 +251,25 @@
         "grid_item_width": "collections--full",
         "grid_gap": 10
       }
-    }
+    },
+    "price_hits_week": {
+      "type": "price-hits-week",
+      "blocks": {
+      },
+      "block_order": [
+      ],
+      "name": "Price Hits Week",
+      "settings": {
+      }
+    },
+    
   },
   "order": [
     "category_chips",
     "hero_grid",
     "today_deals_9rYkaX",
     "browse_by_category",
+    "price_hits_week",
     "collections_ff8Ccj"
   ]
 }
