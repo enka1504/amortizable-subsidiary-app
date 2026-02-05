@@ -3,6 +3,8 @@
     padding: 28px 0 34px;
     border-radius: 14px;
     background: linear-gradient(180deg, rgba(214, 242, 247, .65), rgba(214, 242, 247, .35));
+    overflow: hidden;
+    scrollbar-width: 0px;
 }
 
 .phw__wrap {
