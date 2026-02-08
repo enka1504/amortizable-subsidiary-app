@@ -1,5 +1,5 @@
 {
-  "name": "adaptive-merchant-app",
+  "name": "beneficial-shareholder-app",
   "private": true,
   "scripts": {
     "build": "react-router build",

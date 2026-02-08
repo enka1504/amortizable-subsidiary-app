@@ -1,0 +1,20 @@
+client_id = "fc793530a5f5a90509732486254acc8a"
+name = "beneficial-shareholder-app"
+application_url = "https://YOUR-TUNNEL-URL"
+
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+include_config_on_deploy = true
+
+[webhooks]
+api_version = "2026-04"
+
+[access_scopes]
+scopes = "read_products"
+
+[auth]
+redirect_urls = [
+  "https://YOUR-TUNNEL-URL/auth/callback"
+]
