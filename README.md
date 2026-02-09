@@ -11,7 +11,33 @@ Monorepo for a Shopify store build that includes:
 Repo is primarily **Liquid**, with **JavaScript** and **CSS**. :contentReference[oaicite:0]{index=0}
 
 
----
+## 📸 Screenshots
+
+### 🛍 Store Homepage
+
+![Store Homepage](screenshots/index-1.png)
+
+![Store Homepage](screenshots/index-2.png)
+
+![Store Homepage](screenshots/index-1-3.png)
+
+### 📦 Collections
+
+![collects](screenshots/collections.png)
+
+### 📦 products
+
+![collects](screenshots/all_products.png)
+
+### 📦 product detail
+
+![collects](screenshots/product.png)
+
+### 📦 cart
+
+![collects](screenshots/cart.png)
+
+
 
 
 ## Repository layout

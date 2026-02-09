@@ -1,8 +1,8 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "7abda5488db6f8c292cdc6f5b4bb2570"
-name = "adaptive-merchant-app"
-application_url = "https://advice-generic-pros-suggests.trycloudflare.com"
+client_id = "eb8427c349cc9b19610bd7b179090a3f"
+name = "beneficial-shareholder-app"
+application_url = "https://example.com"
 embedded = true
 
 [build]
